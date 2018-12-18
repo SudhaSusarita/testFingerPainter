@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FingerSketcher</string>
+    <item name="view" type="id" />
+    <string name="shape_prompt">Choose a brush shape</string>
+
+    <string-array name="Brush_Shape">
+        <item>Butt</item>
+        <item>Round</item>
+        <item>Square</item>
+    </string-array>
+    <string name="size_prompt">Choose a Stroke size</string>
+
+    <string-array name="Brush_size">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BrushActivity">
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="592dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lLayout1">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Submit"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="94dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayout1"
+        android:layout_width="592dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/layout3"
+        app:layout_constraintStart_toStartOf="@+id/lLayout2">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:text="Choose a brush shape"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:entries="@array/Brush_Shape"
+            android:gravity="left"
+            android:prompt="@string/shape_prompt"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayout2"
+        android:layout_width="0dp"
+        android:layout_height="574dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lLayout1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="Choose a brush size"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Brush_size"
+            android:gravity="left"
+            android:prompt="@string/size_prompt" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
